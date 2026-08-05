@@ -2484,11 +2484,14 @@ public final class ItemsTFCF
             );
         }
 
-        for (PowderTFCE powder : PowderTFCE.values())
-        {
-            event.getRegistry().registerAll(
-                new ItemPowderTFCE(powder).setRegistryName(TFCElementia.MODID, "powder/" + powder.name().toLowerCase()).setTranslationKey("powder." + powder.name().toLowerCase())
-            );
+        if (TFCFlorae.TFCElementiaAdded) {
+
+            for (PowderTFCE powder : PowderTFCE.values()) {
+                event.getRegistry().registerAll(
+                        new ItemPowderTFCE(powder).setRegistryName(TFCElementia.MODID, "powder/" + powder.name().toLowerCase()).setTranslationKey("powder." + powder.name().toLowerCase())
+                );
+            }
+
         }
     }
 

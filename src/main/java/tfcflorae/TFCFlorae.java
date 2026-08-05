@@ -76,8 +76,7 @@ public class TFCFlorae
     public static final String DEPENDENCIES = "required-after:tfc@[1.7,);"
             + "after:firmalife;"
             + "after:tfcelementia;"
-            + "after:tfc_ph_compat;"
-            + "required-after:loliasm;";
+            + "after:tfc_ph_compat";
 
     @Mod.Instance
     public static TFCFlorae instance;
